@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.tile_row {
+    float: left;
+    width: 100%;
+}
+
+.tile {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile:hover {
+  background-color: #89c5c8;
+  cursor: pointer;
+}
+
+.reset {
+  display: none;
+  margin-top: 1rem;
+}

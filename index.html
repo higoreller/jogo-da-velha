@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jogo da Velha</h1>
+    <h2>Jogador da vez: <span id="sJogadorDaVez">X</span></h2>
+    <div id="counter">00:00:00</div>
+    <div id="bestTime"></div>
+    <p>Pontuação do jogador X: <span id="xPoints">0</span></p>
+    <p>Pontuação do jogador O: <span id="oPoints">0</span></p>
+  </header>
+
+  <main>
+    <div class="tile_row">
+      <span id="1" class="tile" onclick="selectedDiv(event); giveAlert(event, 1)"></span>
+      <span id="2" class="tile" onclick="selectedDiv(event); giveAlert(event, 2)"></span>
+      <span id="3" class="tile" onclick="selectedDiv(event); giveAlert(event, 3)"></span>
+    </div>
+    <div class="tile_row">
+      <span id="4" class="tile" onclick="selectedDiv(event); giveAlert(event, 4)"></span>
+      <span id="5" class="tile" onclick="selectedDiv(event); giveAlert(event, 5)"></span>
+      <span id="6" class="tile" onclick="selectedDiv(event); giveAlert(event, 6)"></span>
+    </div>
+    <div class="tile_row">
+      <span id="7" class="tile" onclick="selectedDiv(event); giveAlert(event, 7)"></span>
+      <span id="8" class="tile" onclick="selectedDiv(event); giveAlert(event, 8)"></span>
+      <span id="9" class="tile" onclick="selectedDiv(event); giveAlert(event, 9)"></span>
+    </div>
+    <button id="resetButton" class="reset" onclick="reset()">Reiniciar a partida</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
